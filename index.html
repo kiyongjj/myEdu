@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>처음으로 해보는 리스트</title>
+
+		<script src="http://jashkenas.github.io/underscore/underscore-min.js"></script>
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+		<script src="./data.js"></script>
+		<script src="./index.js"></script>
+	</head>
+	<body>
+		<div name="inputArea" class="well">
+			<div class="form-group">
+				<input type="text" class="form-control" name="_id" placeholder="ID">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="name" placeholder="학교">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="addr" placeholder="주소">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="tel" placeholder="전화번호">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="homepage" placeholder="홈페이지">
+			</div>
+			<p>
+				<button class="btn btn-sm btn-warning" name="save"><i class="glyphicon glyphicon-floppy-disk"></i> 저장</button>
+			</p>
+		</div>
+		<div name="listArea" class="well">
+			<p><th><button class="btn btn-sm btn-success" name="view"><i class="glyphicon glyphicon-search"></i> 조회</button></th>
+
+			<table name="listTable" class="table table-bordered table-condensed table-hover table-striped">
+				<thead>
+					<th>학교</th>
+					<th>주소</th>
+					<th>전화번호</th>
+					<th>홈페이지</th>
+					<th></th>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
